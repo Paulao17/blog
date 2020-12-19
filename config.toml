@@ -182,6 +182,7 @@ disableLanguages        = []
   flickr                = ""
   behance               = ""
   dribbble              = ""
+  unsplash              = "palnt"
   # Publishing Communities
   wordpress             = ""
   medium                = ""
