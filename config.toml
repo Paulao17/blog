@@ -62,7 +62,7 @@ disableLanguages        = []
 
   [params.sidebar]
     about               = "Paul Alnet is a highschool student striving to better himself."
-    postAmount          = 5
+    postAmount          = 3
     categories          = true
     categoriesByCount   = true
 
