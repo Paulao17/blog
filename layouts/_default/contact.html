@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <article class="post">
+    <header>
+      <div class="title">
+        <h1><a href="{{ .RelPermalink }}">{{ i18n "contact" }}</a></h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </header>
+    <h4>{{ i18n "contact_replies" .Params.contactanswertime }}</h4>
+      <div id="content">
+
+        <div class="contact-container">
+          {{ .Content }}
+
+
+      </div>
+    </div>
+  </article>
+{{ end }}
