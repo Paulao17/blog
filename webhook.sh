@@ -8,4 +8,4 @@ hugo
 
 # Copy to server directory
 echo "3. Copying static files to server static directory"
-cp -r public/* /var/www/blogslovetoparty # export BASEDIR=/var/www/examplecom/math
+sudo cp -r public/* /var/www/blogslovetoparty # export BASEDIR=/var/www/examplecom/math
