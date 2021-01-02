@@ -9,6 +9,7 @@ const exec = require('child_process').exec;
 // Rate limiting
 var lastUpdate = 0
 const MIN_TIME_BETWEEN_REQ = 30000 // in ms
+const PORT = 12346
 
 http.createServer(function(req, res) {
   if (req.url == "/webhook" && Date.now() - lastUpdate > MIN_TIME_BETWEEN_REQ) {
@@ -27,4 +28,4 @@ http.createServer(function(req, res) {
     'Content-Type': 'text/plain'
   });
   res.end('Hello World!');
-}).listen(12345);
+}).listen(PORT);
