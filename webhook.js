@@ -13,7 +13,8 @@ const PORT = 12346
 
 http.createServer(function(req, res) {
   if (req.url == "/webhook" && Date.now() - lastUpdate > MIN_TIME_BETWEEN_REQ) {
-    lastUpdate = Date.now()
+    lastUpdate = Date.now();
+    console.log("New call at " + new Date());
     exec('sh webhook.sh',
       (error, stdout, stderr) => {
         console.log(`${stdout}`);
